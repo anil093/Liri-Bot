@@ -12,18 +12,6 @@ var command = process.argv[2];
 var x = process.argv[3];
 
 
-
-
-// if( command = "my-tweets"){
-//     showtweet();
-// }
-// else if(x= )
-
-
-
-
-
-
  switch(command){
      case "my-tweets":
      showtweet();
@@ -120,7 +108,7 @@ function showtweet(){
             //var body = JSON.parse(body);
              
             console.log(response);
-           /* console.log("Title: " + body.Title);
+            console.log("Title: " + body.Title);
             console.log("Release Year: " + body.Year);
             console.log("IMdB Rating: " + body.imdbRating);
             console.log("Country: " + body.Country);
@@ -128,18 +116,18 @@ function showtweet(){
             console.log("Plot: " + body.Plot);
             console.log("Actors: " + body.Actors);
             console.log("Rotten Tomatoes Rating: " + body.tomatoRating);
-            console.log("Rotten Tomatoes URL: " + body.tomatoURL); */
+            console.log("Rotten Tomatoes URL: " + body.tomatoURL); 
       
-            //adds text to log.txt
-            // fs.appendFile('log.txt', "Title: " + body.Title);
-            // fs.appendFile('log.txt', "Release Year: " + body.Year);
-            // fs.appendFile('log.txt', "IMdB Rating: " + body.imdbRating);
-            // fs.appendFile('log.txt', "Country: " + body.Country);
-            // fs.appendFile('log.txt', "Language: " + body.Language);
-            // fs.appendFile('log.txt', "Plot: " + body.Plot);
-            // fs.appendFile('log.txt', "Actors: " + body.Actors);
-            // fs.appendFile('log.txt', "Rotten Tomatoes Rating: " + body.tomatoRating);
-            // fs.appendFile('log.txt', "Rotten Tomatoes URL: " + body.tomatoURL);
+            // adds text to log.txt
+            fs.appendFile('log.txt', "Title: " + body.Title);
+            fs.appendFile('log.txt', "Release Year: " + body.Year);
+            fs.appendFile('log.txt', "IMdB Rating: " + body.imdbRating);
+            fs.appendFile('log.txt', "Country: " + body.Country);
+            fs.appendFile('log.txt', "Language: " + body.Language);
+            fs.appendFile('log.txt', "Plot: " + body.Plot);
+            fs.appendFile('log.txt', "Actors: " + body.Actors);
+            fs.appendFile('log.txt', "Rotten Tomatoes Rating: " + body.tomatoRating);
+            fs.appendFile('log.txt', "Rotten Tomatoes URL: " + body.tomatoURL);
       
           } else{
             console.log('Error occurred.' + error)
@@ -148,29 +136,3 @@ function showtweet(){
         });
       
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
